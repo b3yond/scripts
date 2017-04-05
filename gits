@@ -5,7 +5,7 @@ commitmsg="$(gits.py)"
 git config --get user.name
 git config --get user.email
 git add *
-git status
+git checkout
 git commit -m "$commitmsg"
 git push -u origin master
 
