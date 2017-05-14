@@ -1,11 +1,12 @@
 #!/bin/bash
 echo This is a small script to push a git repository.
 git add *
-git checkout
+git status
 echo Enter a commit message: 
 commitmsg="$(gits.py)"
 git config --get user.name
 git config --get user.email
 git commit -m "$commitmsg"
+git checkout
 git push -u origin master
 
