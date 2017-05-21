@@ -1,4 +1,4 @@
 #!/bin/sh
 pass -c b3yond
-sudo aptitude update
-sudo aptitude upgrade -y
+sudo apt update
+sudo apt upgrade -y
