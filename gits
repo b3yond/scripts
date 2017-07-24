@@ -1,4 +1,5 @@
 #!/bin/bash
+git diff
 echo This is a small script to push a git repository.
 git add *
 git status
@@ -8,5 +9,6 @@ git config --get user.name
 git config --get user.email
 git commit -m "$commitmsg"
 git checkout
-git push -u origin master
+pass -c web/github
+git push origin master
 
