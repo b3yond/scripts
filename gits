@@ -4,11 +4,11 @@ git diff --staged
 echo This is a small script to push a git repository.
 git add *
 git status
+echo "committing to $(git rev-parse --abbrev-ref HEAD)"
 echo Enter a commit message: 
 read commitmsg
 git config --get user.name
 git config --get user.email
-commiting to $(git rev-parse --abbrev-ref HEAD)
 git commit -m "$commitmsg"
 git checkout
 pass -c web/github
